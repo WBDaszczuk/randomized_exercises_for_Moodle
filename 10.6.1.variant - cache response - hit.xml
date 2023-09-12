@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 1967618  -->
+  <question type="calculated">
+    <name>
+      <text>Skewed set-associative cache – response - hit</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Byte-addressed memory has a 16-bit address. A skewed 2-way
+set-associative cache has 7-bit tags and 4-byte lines.</p>
+
+<p>In the example below, enter the cache response on a hit or
+the address of the row to be replaced on a miss. All values are given in
+hexadecimal, and the result should be entered as such.</p>
+
+<p>Content bytes are addressed from 0 to the left.</p>
+
+<p>Effective address from processor:
+#{=8000+{x}*1000+{y}*400+{z}*200+{x}*100+80+{z}*4+{v}}. All values are given in
+hexadecimal, and the result should be entered as such, but without preceding it
+with a character #.</p>
+
+<table border="1" cellspacing="0" cellpadding="0">
+ <tbody><tr>
+  <td width="57" valign="top">
+  <p>Address</p>
+  </td>
+  <td width="28" valign="top">
+  <p>1</p>
+  </td>
+  <td width="78" valign="top">
+  <p>tag</p>
+  </td>
+  <td width="184" colspan="4" valign="top">
+  <p>content</p>
+  </td>
+  <td width="26" valign="top">
+  <p>2</p>
+  </td>
+  <td width="77" valign="top">
+  <p>tag</p>
+  </td>
+  <td width="179" colspan="4" valign="top">
+  <p>content</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>#20</p>
+  </td>
+  <td width="28" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="78" valign="top">
+  <p>#40</p>
+  </td>
+  <td width="50" valign="top">
+  <p>#00&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#01</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#02</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#03</p>
+  </td>
+  <td width="26" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="77" valign="top">
+  <p>#42</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#20</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#21</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#22</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#23</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>#21</p>
+  </td>
+  <td width="28" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="78" valign="top">
+  <p>#41</p>
+  </td>
+  <td width="50" valign="top">
+  <p>#10</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#11</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#12</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#13</p>
+  </td>
+  <td width="26" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="77" valign="top">
+  <p>#43</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#30</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#31</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#32</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#33</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>...</p>
+  </td>
+  <td width="28" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="78" valign="top">
+  <p>...</p>
+  </td>
+  <td width="50" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="26" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="77" valign="top">
+  <p>...</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="45" valign="top">
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>#60</p>
+  </td>
+  <td width="28" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="78" valign="top">
+  <p>#48</p>
+  </td>
+  <td width="50" valign="top">
+  <p>#40</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#41</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#42</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#43</p>
+  </td>
+  <td width="26" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="77" valign="top">
+  <p>#4A</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#60</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#61</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#62</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#63</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>#61</p>
+  </td>
+  <td width="28" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="78" valign="top">
+  <p>#49</p>
+  </td>
+  <td width="50" valign="top">
+  <p>#50</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#51</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#52</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#53</p>
+  </td>
+  <td width="26" valign="top">
+  <p>&nbsp;</p>
+  </td>
+  <td width="77" valign="top">
+  <p>#4B</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#70</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#71</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#72</p>
+  </td>
+  <td width="45" valign="top">
+  <p>#73</p>
+  </td>
+ </tr>
+</tbody></table>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>{x}*40+{y}*20+{z}*10+{v}</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

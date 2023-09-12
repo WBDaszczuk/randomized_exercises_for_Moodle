@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 999785  -->
+  <question type="calculated">
+    <name>
+      <text>Paging - physical memory size</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Assuming that memory cells are 1-byte, the page number in the address field is {a} bits, the offset is {b} bits, the frame number is {c} bits, and all entries in the PIT page index table are on a {=pow(2,{d})}-byte word&nbsp;boundary, please specify:</p><p>- the maximum size of the program's physical memory in MB</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>pow(2,{b}-10+{c}-10)+{a}-{a}+{d}-{d}</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 999301  -->
+  <question type="calculated">
+    <name>
+      <text><![CDATA[Addressing rel+index < 0 postdecr]]></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For the given content of registers and RAM, give the value of the instruction argument (for example in LOAD operation). All registers and memory locations are 16-bit. The opcode is 3 bits, then the addressing mode code (2b) and the register number, then the scale (2 bits) and the index register number (only the first 4 registers), the rest is the direct argument in U2. The addressing mode code means:</p><p>00 - relative + index mode with scale and postdecrement + displacement</p><p>01 - relative + index mode with scale and predecrement + displacement</p><p>10 – relative + index mode with scale and postincrement + displacement</p><p>11 - relative + index mode with scale and preincrement + displacement</p><p>The scale is given as a power of 2.</p><p>Values in the tables are given in hexadecimal.</p><p>Specify in decimal the value of the effective operand of the instruction, and after point - the content of the index register after execution of the instruction, also in decimal as a two-digit number. Example: 35.36.</p>
+<table style="width: 404px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="97">
+<p align="center"><span style="font-size: medium;">register</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R0</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R1</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R2</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R3</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R4</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R5</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R6 SP</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R7 PC</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="97">
+<p align="center"><span style="font-size: medium;">content</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#08</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#09</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0A</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0B</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0C</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0D</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0E</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0F</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>IR content: #E{={y}*4+{x}*2+{z}}{={v}*4+{y}*2+(1-{z})}{=8+{x}}</p>
+<table style="width: 628px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">RAM - address</span></p>
+</td>
+<td>
+<p align="center">#00</p>
+</td>
+<td>
+<p align="center">#01</p>
+</td>
+<td>
+<p align="center">#02</p>
+</td>
+<td>
+<p align="center">#03</p>
+</td>
+<td>
+<p align="center">#04</p>
+</td>
+<td>
+<p align="center">#05</p>
+</td>
+<td>
+<p align="center">#06</p>
+</td>
+<td>
+<p align="center">#07</p>
+</td>
+<td>
+<p align="center">#08</p>
+</td>
+<td>
+<p align="center">#09</p>
+</td>
+<td>
+<p align="center">#0A</p>
+</td>
+<td>
+<p align="center">#0B</p>
+</td>
+<td>
+<p align="center">#0C</p>
+</td>
+<td>
+<p align="center">#0D</p>
+</td>
+<td>
+<p align="center">#0E</p>
+</td>
+<td>
+<p align="center">#0F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">content</span></p>
+</td>
+<td>
+<p align="center">#1F</p>
+</td>
+<td>
+<p align="center">#1E</p>
+</td>
+<td>
+<p align="center">#1D</p>
+</td>
+<td>
+<p align="center">#1C</p>
+</td>
+<td>
+<p align="center">#1B</p>
+</td>
+<td>
+<p align="center">#1A</p>
+</td>
+<td>
+<p align="center">#19</p>
+</td>
+<td>
+<p align="center">#18</p>
+</td>
+<td>
+<p align="center">#17</p>
+</td>
+<td>
+<p align="center">#16</p>
+</td>
+<td>
+<p align="center">#15</p>
+</td>
+<td>
+<p align="center">#14</p>
+</td>
+<td>
+<p align="center">#13</p>
+</td>
+<td>
+<p align="center">#12</p>
+</td>
+<td>
+<p align="center">#11</p>
+</td>
+<td>
+<p align="center">#10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">&nbsp;</span></p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">RAM - address</span></p>
+</td>
+<td>
+<p align="center">#10</p>
+</td>
+<td>
+<p align="center">#11</p>
+</td>
+<td>
+<p align="center">#12</p>
+</td>
+<td>
+<p align="center">#13</p>
+</td>
+<td>
+<p align="center">#14</p>
+</td>
+<td>
+<p align="center">#15</p>
+</td>
+<td>
+<p align="center">#16</p>
+</td>
+<td>
+<p align="center">#17</p>
+</td>
+<td>
+<p align="center">#18</p>
+</td>
+<td>
+<p align="center">#19</p>
+</td>
+<td>
+<p align="center">#1A</p>
+</td>
+<td>
+<p align="center">#1B</p>
+</td>
+<td>
+<p align="center">#1C</p>
+</td>
+<td>
+<p align="center">#1D</p>
+</td>
+<td>
+<p align="center">#1E</p>
+</td>
+<td>
+<p align="center">#1F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">content</span></p>
+</td>
+<td>
+<p align="center">#0F</p>
+</td>
+<td>
+<p align="center">#0E</p>
+</td>
+<td>
+<p align="center">#0D</p>
+</td>
+<td>
+<p align="center">#0C</p>
+</td>
+<td>
+<p align="center">#0B</p>
+</td>
+<td>
+<p align="center">#0A</p>
+</td>
+<td>
+<p align="center">#09</p>
+</td>
+<td>
+<p align="center">#08</p>
+</td>
+<td>
+<p align="center">#07</p>
+</td>
+<td>
+<p align="center">#06</p>
+</td>
+<td>
+<p align="center">#05</p>
+</td>
+<td>
+<p align="center">#04</p>
+</td>
+<td>
+<p align="center">#03</p>
+</td>
+<td>
+<p align="center">#02</p>
+</td>
+<td>
+<p align="center">#01</p>
+</td>
+<td>
+<p align="center">#00</p>
+</td>
+</tr>
+</tbody>
+</table>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>31-({y}*4+{x}*2+{z}+8+({y}*2+(1-{z})+8)*pow(2,{v})-8+{v})+0.01*(8+{y}*2+(1-{z})-1)</text>
+    <tolerance>0.04</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>2</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

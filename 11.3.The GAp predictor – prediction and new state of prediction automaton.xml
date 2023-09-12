@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 1967624  -->
+  <question type="calculated">
+    <name>
+      <text>GAp przykład pred xx</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Predyktor jest typu GAp</p>
+<p>Tabela BTB ma postać:</p>
+<p style="text-align: -webkit-right;"> </p>
+<table style="width: 265px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="64">
+<p align="right">indeks</p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="201">
+<p align="right">wartość</p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="64">
+<p align="right">0</p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="201">
+<p align="right">#FE2A</p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="64">
+<p align="right">1</p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="201">
+<p align="right">#FE3A</p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="64">
+<p align="right">2</p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="201">
+<p align="right">#FE6A</p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="64">
+<p align="right">3</p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="201">
+<p align="right">#FE7A</p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="64">
+<p align="right">...</p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="201">
+<p align="right">...</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: -webkit-right;"><span style="font-size: 1rem;">..</span></p>
+<p>Adres w liczniku instrukcji jest równy #FE<span>{=({j})*4+2+({k})}A</span></p>
+<p>Automaty predykcyjny mają 4 stany kodowane SNT-0/WNT-1/WT-2/ST-3.</p>
+<p>W rejestrze historii kodowanie NT-0, T-1</p>
+<p>Rejestr historii BHR ma postać (po lewej najmłodszy wpis, będący jednocześnie najmniej znaczącym bitem adresacji PHT)</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="110">
+<p>{={d}}</p>
+</td>
+<td valign="top" width="66">
+<p>{={c}}</p>
+</td>
+<td valign="top" width="113">
+<p>{={b}}</p>
+</td>
+<td valign="top" width="57">
+<p>{={a}}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>tabela PHT (położona) SNT-0/WNT-1/WT-2/ST-3</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="64">
+<p><span style="font-size: x-small;">adr</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">0</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">4</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">5</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">6</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">7</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">8</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">9</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">A</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">B</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">C</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">D</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">E</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">F</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="64">
+<p><span style="font-size: x-small;">ind 0 wart</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="64">
+<p><span style="font-size: x-small;">ind 1 wart</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">0</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">0</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">1</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">0</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">0</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">2</span></p>
+</td>
+<td valign="top" width="32">
+<p><span style="font-size: x-small;">3</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="64"><span style="font-size: x-small;">ind 2 wart</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">2</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">2</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+</tr>
+<tr>
+<td valign="top" width="64"><span style="font-size: x-small;">ind 3 wart</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">2</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">2</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">3</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">2</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">2</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">0</span></td>
+<td valign="top" width="32"><span style="font-size: x-small;">1</span></td>
+</tr>
+<tr>
+<td valign="top" width="64"><span style="font-size: x-small;">...</span></td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+<td valign="top" width="32"> </td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 1rem;">Jaka będzie predykcja? (NT-0, T-1)</span></p>
+<p><span style="font-size: 1rem;">Skok został (zrealizowany T-1/niezrealizowany NT-0): {e}</span></p>
+<p><span>Jaki będzie nowy stan automatu predyktora? (SNT-0/WNT-1/WT-2/ST-3)</span></p>
+<p><span>Wynik należy podać w postaci predykcja,stan; na przykład dla T,SNT należy podać 1,0</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>floor((fmod({j}*2+{k}+{a}+(1-{b})+(1-{c})+({d}),4))/2)+round((fmod({j}*2+{k}+{a}+(1-{b})+(1-{c})+({d}),4)+({e}*2-1)+1)*0.7-0.25)*0.1</text>
+    <tolerance>0.04</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>1</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

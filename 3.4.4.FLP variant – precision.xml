@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 998462  -->
+  <question type="calculatedmulti">
+    <name>
+      <text>FLP precision 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The IEEE binary32 format is 1(sign) 8(exponent) 23(mantissa).</p><p>Enter the result of adding numbers in IEEE754 binary32 format: 2<sup>{={FP}+23}</sup> and {arg2} , in binary32 format.</p><p>Ignore the rounding.</p><p>(the symbol ^ means a power, i.e. 2<sup>2</sup> is written 2^2)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>1</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text><![CDATA[<p>Twoja odpowiedź jest poprawna.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text><![CDATA[<p>Twoja odpowiedź jest częściowo poprawna.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text><![CDATA[<p>Twoja odpowiedź jest niepoprawna.</p>]]></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>2^{={FP}+23} + {= {arg2} - ({arg2} % (2**({FP})))}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+<answer fraction="0">
+    <text>2^{={FP}+23} + {= {arg2} - ({arg2} % (2**({FP}-1)))}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+<answer fraction="0">
+    <text>2^{={FP}+23} + {= {arg2} - ({arg2} % (2**({FP}+1)))}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+<answer fraction="0">
+    <text>2^{={FP}+23} + {= {arg2} - ({arg2} % (2**({FP}+({baddev}*2))))}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+  </question>
+
+</quiz>

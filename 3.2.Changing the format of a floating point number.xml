@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 998426  -->
+  <question type="calculated">
+    <name>
+      <text>FLP compression  5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>We have a number in IEEE-like 14-bit FLP code (5-bit exponent). Compress this number to 12-bit format (with a 4-bit exponent). s means sign, e - exponent, m - mantissa.</p><p>14 bit format:</p><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="43"><p>b<sub>13</sub>-s</p></td><td valign="top" width="43"><p>b<sub>12</sub>-e</p></td><td valign="top" width="49"><p>b<sub>11</sub>-e</p></td><td valign="top" width="49"><p>b<sub>10</sub>-e</p></td><td valign="top" width="46"><p>b<sub>9</sub>-e</p></td><td valign="top" width="46"><p>b<sub>8</sub>-e</p></td><td valign="top" width="46"><p>b<sub>7</sub>-m</p></td><td valign="top" width="46"><p>b<sub>6</sub>-m</p></td><td valign="top" width="46"><p>b<sub>5</sub>-m</p></td><td valign="top" width="46"><p>b<sub>4</sub>-m</p></td><td valign="top" width="46"><p>b<sub>3</sub>-m</p></td><td valign="top" width="46"><p>b<sub>2</sub>-m</p></td><td valign="top" width="46"><p>b<sub>1</sub>-m</p></td><td valign="top" width="46"><p>b<sub>0</sub>-m</p></td></tr><tr><td valign="top" width="43"><p>1</p></td><td valign="top" width="43"><p>1</p></td><td valign="top" width="49">0</td><td valign="top" width="49"><p>{a}</p></td><td valign="top" width="46">0</td><td valign="top" width="46"><p>{c}</p></td><td valign="top" width="46"><p>{f}</p></td><td valign="top" width="46"><p>{=1-{b}}</p></td><td valign="top" width="46">{i}</td><td valign="top" width="46"><p>0</p></td><td valign="top" width="46"><p>1</p></td><td valign="top" width="46"><p>1</p></td><td valign="top" width="46"><p>1</p></td><td valign="top" width="46"><p>1</p></td></tr></tbody></table><p>&nbsp;in the result, remove the spaces separating the number fields</p><br><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>100000000000+10000000000+{a}*1000000000+{c}*10000000+{f}*1000000+(1-{b})*100000+{i}*10000+1000</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

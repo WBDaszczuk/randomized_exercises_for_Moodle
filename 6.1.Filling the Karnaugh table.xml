@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 1000052  -->
+  <question type="calculated">
+    <name>
+      <text>Random Karnaugh Table</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>3-bit sequence xyz is treated as a binary NBC value,
+for example 000 (x=0, y=0, z=0) is decimal 0. Please fill the Karnaugh table for the function
+giving 1 for the following decimal values: 0, {b}, {c}, {d} The variable x is msb. Provide the contents of the table in rows, i.e, the bits ABCDEFGH, for example, if C=1 and D=1, give the result 00110000</p>
+<p>&nbsp;</p>
+<table border="1" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td valign="top" width="38">
+<p><span style="font-size: medium;">&nbsp;</span></p>
+</td>
+<td colspan="5" width="304">
+<p><span style="font-size: medium;">&nbsp;</span></p>
+<p align="center"><span style="font-size: medium;">Karnaugh table</span></p>
+<p align="center"><span style="font-size: medium;">q = f(x, y, z)</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="38">
+<p><span style="font-size: medium;">&nbsp;</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">&nbsp;</span></p>
+</td>
+<td colspan="4" width="244">
+<p align="center"><span style="font-size: medium;">&nbsp;variables y,z</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="38">
+<p><span style="font-size: medium;">&nbsp;</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">&nbsp;</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">00</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">01</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">11</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">10</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="38">
+<p align="center"><span style="font-size: medium;">variable x</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">0</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">A</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">B</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">C</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">D</span></p>
+</td>
+</tr>
+<tr>
+<td width="61">
+<p align="center"><span style="font-size: medium;">1</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">E</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">F</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">G</span></p>
+</td>
+<td width="61">
+<p align="center"><span style="font-size: medium;">H</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>10000000+pow(10,7-(5-{b}))+pow(10,7-{c})+pow(10,7-(13-{d}))</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

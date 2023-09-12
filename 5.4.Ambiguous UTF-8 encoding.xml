@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 785412  -->
+  <question type="calculated">
+    <name>
+      <text>UTF-8 shortening 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">For code in UTF-8:</span><br></p><p>11100000 100{=1-{b}}{c}{b}{=1-{a}}{d} 10{b}{c}{d}{=1-{c}}{=1-{d}}{a}</p><p>specify the shortest alternative UTF-8 code. Separate the solution bytes with a point.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>11000000+(1-{b})*10000+{c}*1000+{b}*100+(1-{a})*10+{d}+0.1+{b}*0.001+{c}*0.0001+{d}*0.00001+(1-{c})*0.000001+(1-{d})*0.0000001+{a}*0.00000001</text>
+    <tolerance>4.0E-9</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>8</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

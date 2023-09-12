@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 999775  -->
+  <question type="calculated">
+    <name>
+      <text>Paging - address translation 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The virtual address consists of 8b page number and 8b offset. The page index table is shown below (index, content). For decimal address {=({s3}*4+{s2}*2+{s1})*256+({i7}*128+{i5}*32+{i4}*16+{i1}*2)}, binary 0000 0{s3}{s2}{s1} {i7}0{i5}{i4} 00{i1}0, enter the physical address in the form: frame number.offset (as decimal numbers, offset in 3 digits ). For example, for a physical address consisting of frame 0 and offset 18, specify 0.018. If there is no physical address for the given virtual address, then -1 should be specified, without offset.</p>
+<p>&nbsp;</p>
+<table style="height: 305px; width: 181px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">7</p>
+</td>
+<td valign="top" width="102">
+<p>{=fmod(pow(2, 7)+1,13)*(1-({i4})*({i1}))-(({i4})*({i1}))}</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">6</p>
+</td>
+<td valign="top" width="102">
+<p>{=fmod(pow(2, 6)+1,13)*(1-({i4})*(1-{i1}))-(({i4})*(1-{i1}))}</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">5</p>
+</td>
+<td valign="top" width="102">
+<p>{=fmod(pow(2, 5)+1,13)*(1-(1-{i4})*({i1}))-((1-{i4})*({i1}))}</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">4</p>
+</td>
+<td valign="top" width="102">
+<p>{=fmod(pow(2, 4)+1,13)*(1-(1-{i4})*(1-{i1}))-((1-{i4})*(1-{i1}))}</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">3</p>
+</td>
+<td valign="top" width="102">
+<p><span>{=fmod(pow(2, 3)+1,13)*(1-({i4})*({i1}))-(({i4})*({i1}))}</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">2</p>
+</td>
+<td valign="top" width="102">
+<p><span>{=fmod(pow(2, 2)+1,13)*(1-({i4})*(1-{i1}))-(({i4})*(1-{i1}))}</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">1</p>
+</td>
+<td valign="top" width="102">
+<p><span>{=fmod(pow(2, 1)+1,13)*(1-(1-{i4})*({i1}))-((1-{i4})*({i1}))}</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="45">
+<p style="text-align: left;" align="right">0</p>
+</td>
+<td valign="top" width="102">
+<p><span>{=fmod(pow(2, 0)+1,13)*(1-(1-{i4})*(1-{i1}))-((1-{i4})*(1-{i1}))}</span></p>
+</td>
+</tr>
+</tbody>
+</table>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>(fmod(pow(2,{s3}*4+{s2}*2+{s1})+1,13)+({i7}*128+{i5}*32+{i4}*16+{i1}*2)/1000)*(floor(abs({s2}*2+{s1}-{i4}*2-{i1})/4+0.9))-(1-floor(abs({s2}*2+{s1}-{i4}*2-{i1})/4+0.9))</text>
+    <tolerance>0.0004</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>3</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

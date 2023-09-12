@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 998415  -->
+  <question type="calculated">
+    <name>
+      <text>FLP num *2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p></p><p>The following floating-point number L consists of a four-bit mantissa and a four-bit exponent. This number is not normalized and the mantissa is full form (no bits are hidden).<br></p><div><div><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td width="40" valign="top"><p style="text-align: center;">sign</p></td><td width="11" rowspan="2" valign="top"><p style="text-align: center;">&nbsp;</p></td><td width="51" valign="top"><p style="text-align: center;">hidden bit</p></td><td width="11" rowspan="2" valign="top"><p style="text-align: center;">&nbsp;</p></td><td width="105" colspan="4"><p style="text-align: center;">exponent</p></td><td width="19" rowspan="2"><p style="text-align: center;">&nbsp;</p></td><td width="104" colspan="4"><p style="text-align: center;">mantissa</p></td></tr><tr><td width="40" valign="top"><p style="text-align: center;">0</p></td><td width="51" valign="top" style="text-align: center; ">no</td><td width="22"><p style="text-align: center;">0</p></td><td width="26"><p style="text-align: center;">{g}</p></td><td width="28"><p style="text-align: center;">1</p></td><td width="28"><p style="text-align: center;">{h}</p></td><td width="28"><p style="text-align: center;">0</p></td><td width="28"><p style="text-align: center;">0&nbsp;</p></td><td width="23"><p style="text-align: center;">1&nbsp;</p></td><td width="24"><p style="text-align: center;">{a}&nbsp;</p></td></tr></tbody></table><br><br><p>Please write the number ( – L*2) in normalized form. Hide the bit in the resulting number.<br></p><p>(in the solution, remove the spaces separating the number fields)<br></p></div></div><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>100000000+{g}*1000000+{h}*10000+{a}*1000</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

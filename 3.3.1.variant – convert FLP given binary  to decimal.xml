@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 998450  -->
+  <question type="calculated">
+    <name>
+      <text>FLP to decimal 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Decimal value for a floating point number {a} {b}10{e} {f}{g}{h}</p>
+<p>in the format 1(sign)-4(exponent)-3(mantissa), is (provide a decimal value):</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>pow(-1,{a})*pow(2,{b}*8+1*4+(0)*2+{e}-7)*(1+{f}*0.5+{g}*0.25+{h}*0.125)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>pow(-1,{a})*pow(2,{b}*8+1*4+(0)*2+{e}-7)*(1+{f}*0.5+{g}*0.25+{h}*0.125)</text>
+    <tolerance>0</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>8</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

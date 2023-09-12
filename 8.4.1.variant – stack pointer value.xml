@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 999521  -->
+  <question type="calculated">
+    <name>
+      <text>Stack ED - call/act.rec. prologue FP 1par 2var</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The stack is empty descending. The frame pointer is used. Addressing is 16-bit. Memory cells and registers are 16-bit. The stack pointer is #{x}4{y}{b}. The subroutine has 2 local variables occupying 1 memory location each. After calling the subroutine with 1 parameter occupying 1 memory location, after executing the prologue, the stack pointer will be equal to (specify a hexadecimal number but without #):</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>{x}*1000+400+{y}*10+{b}-5</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

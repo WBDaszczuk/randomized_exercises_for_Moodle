@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 1967615  -->
+  <question type="calculated">
+    <name>
+      <text>Skewed set-associative cache - line address</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Byte-addressed memory has a 16-bit address. A skewed set-associative cache
+has 7-bit tags and 4-byte lines.</p>
+
+For the memory address: hexadecimal #{={x}*4+{z}*2+(1-{v})*1}{={x}*4+({v})*2+{z}*1}{=4+{x}*2}{=(1-{z})*4+{v2}*2+{v1}}
+give the address of the line in the cache hexadecimal, omitting the #
+character.<p></p>
+<p>&nbsp;</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>{z}*40+10+({x})*8+(1-{z})+{v}*{v2}*{v1}*0</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

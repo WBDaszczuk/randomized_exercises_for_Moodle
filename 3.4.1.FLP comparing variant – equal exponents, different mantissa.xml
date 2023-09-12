@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 998454  -->
+  <question type="calculatedmulti">
+    <name>
+      <text>FLP compare - mantissa</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Without performing floating point operations, determine which of the numbers is greater. FLP numbers are given in hexadecimal. Format: sign-1, exponent-4, mantissa-4</p><p>first: #1{c}{a}</p><p>second: #1{c}{b}</p><p>which number is greater?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>1</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>0</shuffleanswers>
+    <correctfeedback>
+      <text><![CDATA[<p>Twoja odpowiedź jest poprawna.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text><![CDATA[<p>Twoja odpowiedź jest częściowo poprawna.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text><![CDATA[<p>Twoja odpowiedź jest niepoprawna.</p>]]></text>
+    </incorrectfeedback>
+<answer fraction="0">
+    <text>first #1{c}{a}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+<answer fraction="100">
+    <text>second #1{c}{b}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+<answer fraction="0">
+    <text>none of #1{c}{a}, #1{c}{b}</text>
+    <tolerance>0.01</tolerance>
+    <tolerancetype>1</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+  </question>
+
+</quiz>

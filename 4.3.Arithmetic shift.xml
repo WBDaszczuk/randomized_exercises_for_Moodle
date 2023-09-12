@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 998162  -->
+  <question type="calculated">
+    <name>
+      <text>shift ASL</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Enter the result of the ASL (arithmetic left) shift of the 4-bit register:</p><p>{a}1{c}{d}</p><p>Before shifting conditions C={e}, V={f}.</p><p>Enter the result as xxxx.CV where xxxx is the image of the shifted register and C and V are the condition bits after shift (carry and overflow)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>1*1000+{c}*100+{d}*10+0+{a}*0.1+{e}-{e}+{f}-{f}+(1-{a})*0.01</text>
+    <tolerance>0.004</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>2</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 999204  -->
+  <question type="calculated">
+    <name>
+      <text><![CDATA[Addressing rel < 0 +2ind +shift]]></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For the given content of registers and RAM, give the value of the instruction argument (for example in LOAD operation). All registers and memory locations are 16-bit. The opcode is 3-bit followed by the addressing mode code (2b) and the register number, the rest is the direct operand in U2. The addressing mode code means:</p><p>11 – register mode + direct argument</p><p>10 - relative mode + displacement</p><p>01 - relative mode with displacement + indirect</p><p>00 - relative mode with displacement + double indirect</p><p>Values in the tables are given in hexadecimal.</p><p>Enter the result as a decimal number.</p>
+<table style="width: 404px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="97">
+<p align="center"><span style="font-size: medium;">register</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R0</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R1</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R2</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R3</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R4</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R5</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R6 SP</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">R7 PC</span></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" nowrap="nowrap" width="97">
+<p align="center"><span style="font-size: medium;">content</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#09</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0A</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0B</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0C</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0D</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0E</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#0F</span></p>
+</td>
+<td valign="bottom" nowrap="nowrap" width="38">
+<p align="center"><span style="font-size: medium;">#10</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>IR content:&nbsp;#A{={y}*4+{x}*2+{z}}F{=8+{v}}</p>
+<table style="width: 486px;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">RAM - address</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#00</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#01</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#02</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#03</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#04</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#05</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#06</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#07</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#08</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#09</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0A</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0B</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0C</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0D</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0E</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0F</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span style="font-size: medium;">content</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#02</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#01</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#00</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0F</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0E</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0D</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0C</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0B</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#0A</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#09</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#08</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#07</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#06</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#05</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#04</span></p>
+</td>
+<td>
+<p align="center"><span style="font-size: medium;">#03</span></p>
+</td>
+</tr>
+</tbody>
+</table>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>fmod(15-fmod(15-fmod(15-({y}*4+{x}*2+{z}+9-8+{v})+3,16)+3,16)+3,16)</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>
