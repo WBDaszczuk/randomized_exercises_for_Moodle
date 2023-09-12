@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 787058  -->
+  <question type="calculated">
+    <name>
+      <text>FXP carry 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span>Give the carry bits from c4 to c0 (in that order) as a result of adding two 4-bit numbers in the U2 code. Think about how many bits are from c4 to c0.</span></p>
+<p><span>1</span>{={a2}*10}{={a1}*10}{={a0}*10}<span style="font-size: 0.9375rem;"></span></p>
+<p><span>1{={b2}*10}{={b1}*10}{={b0}*10}</span></p>
+<p><span>"incoming" carry {={c0}*10}</span></p>
+<p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>ceil({c0}*10*ceil(0.1+0.1)*ceil({a2}+{b2})*ceil({a1}+{b1})*ceil({a0}+{b0})*0.1+{a0}*10*{b0}*10*ceil(0.1+0.1)*ceil({a2}+{b2})*ceil({a1}+{b1})*0.1+{a1}*10*{b1}*10*ceil(0.1+0.1)*ceil({a2}+{b2})*0.1+{a2}*10*{b2}*10*ceil(0.1+0.1)*0.1+1*1*0.1)*10000 +ceil({c0}*10*ceil({a2}+{b2})*ceil({a1}+{b1})*ceil({a0}+{b0})*0.1+{a0}*10*{b0}*10*ceil({a2}+{b2})*ceil({a1}+{b1})*0.1+{a1}*10*{b1}*10*ceil({a2}+{b2})*0.1+{a2}*10*{b2}*10*0.1)*1000+ceil({c0}*10*ceil({a1}+{b1})*ceil({a0}+{b0})*0.1+{a0}*10*{b0}*10*ceil({a1}+{b1})*0.1+{a1}*10*{b1}*10*0.1)*100 +ceil({c0}*10*ceil({a0}+{b0})*0.1+{a0}*10*{b0}*10*0.1)*10 +({c0}*10)*1</text>
+    <tolerance>0.4</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>0</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>
