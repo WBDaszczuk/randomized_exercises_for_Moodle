@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 4827  -->
+  <question type="calculated">
+    <name>
+      <text>PAp - BHR example</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>The predictor is of type PAp</p>
+
+<p>The BTB table has the form:</p>
+
+<table border="1" cellspacing="0" cellpadding="0" width="265">
+ <tbody><tr>
+  <td width="64" nowrap="" valign="bottom">
+  <p>index</p>
+  </td>
+  <td width="201" nowrap="" valign="bottom">
+  <p>value</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" nowrap="" valign="bottom">
+  <p>0</p>
+  </td>
+  <td width="201" nowrap="" valign="bottom">
+  <p>#B82C</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" nowrap="" valign="bottom">
+  <p>1</p>
+  </td>
+  <td width="201" nowrap="" valign="bottom">
+  <p>#B83C</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" nowrap="" valign="bottom">
+  <p>2</p>
+  </td>
+  <td width="201" nowrap="" valign="bottom">
+  <p>#B86C</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" nowrap="" valign="bottom">
+  <p>3</p>
+  </td>
+  <td width="201" nowrap="" valign="bottom">
+  <p>#B87C</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" nowrap="" valign="bottom">
+  <p>...</p>
+  </td>
+  <td width="201" nowrap="" valign="bottom">
+  <p>...</p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>In the history register, coding NT-0, T-1</p>
+
+<p>The BHR history register has the form (on the left the
+youngest entry, which is also the least significant bit of the PHT addressing)</p>
+
+<table border="1" cellspacing="0" cellpadding="0">
+ <tbody><tr>
+  <td width="57" valign="top">
+  <p>BHR(0)</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={d}*(1-{q})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={c}}</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={b}*(1-{p})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={a}}</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>BHR(1}</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={d}*({q})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={c}}</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={b}*(1-{p})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={a}}</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>BHR(2)</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={d}*(1-{q})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={c}}</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={b}*({p})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={a}}</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="57" valign="top">
+  <p>BHR(3)</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={d}*({q})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={c}}</p>
+  </td>
+  <td width="104" valign="top">
+  <p>{={b}*({p})}</p>
+  </td>
+  <td width="57" valign="top">
+  <p>{={a}}</p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>The address in the instruction counter is
+#B8{=({p})*4+2+({q})}C</p>
+
+<p>Predictive automata have 4 states coded SNT-0/WNT-1/WT-2/ST-3.</p>
+
+<p>PHT table (shown horizontally) SNT-0/WNT-1/WT-2/ST-3</p>
+
+<table border="1" cellspacing="0" cellpadding="0">
+ <tbody><tr>
+  <td width="64" valign="top">
+  <p>addr</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>4</p>
+  </td>
+  <td width="32" valign="top">
+  <p>5</p>
+  </td>
+  <td width="32" valign="top">
+  <p>6</p>
+  </td>
+  <td width="32" valign="top">
+  <p>7</p>
+  </td>
+  <td width="32" valign="top">
+  <p>8</p>
+  </td>
+  <td width="32" valign="top">
+  <p>9</p>
+  </td>
+  <td width="32" valign="top">
+  <p>A</p>
+  </td>
+  <td width="32" valign="top">
+  <p>B</p>
+  </td>
+  <td width="32" valign="top">
+  <p>C</p>
+  </td>
+  <td width="32" valign="top">
+  <p>D</p>
+  </td>
+  <td width="32" valign="top">
+  <p>E</p>
+  </td>
+  <td width="32" valign="top">
+  <p>F</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" valign="top">
+  <p>ind 0 value</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" valign="top">
+  <p>ind 1 value</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" valign="top">
+  <p>ind 2 value</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="64" valign="top">
+  <p>ind 3 value</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>0</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+  <td width="32" valign="top">
+  <p>1</p>
+  </td>
+  <td width="32" valign="top">
+  <p>3</p>
+  </td>
+  <td width="32" valign="top">
+  <p>2</p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p>What will be the prediction? (NT-0, T-1)</p>
+
+<p>Jump has been taken (T-1 taken/NT-0 not taken): {e}</p>
+
+<p>What will be the new state of the BHR history register after
+the instruction is executed? (4 bits starting with the youngest)</p>
+
+<p>The result should be given in the form of
+prediction,register, for example, for T,1010, enter 1.1010</p><p><span></span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <synchronize>0</synchronize>
+    <single>0</single>
+    <answernumbering>abc</answernumbering>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+<answer fraction="100">
+    <text>floor((fmod((1-{a})+({b})*{p}+({c})+(1-{d})*{q},4))/2)+{e}*0.1+{d}*0.01+{c}*0.001+{b}*0.0001</text>
+    <tolerance>4.0E-5</tolerance>
+    <tolerancetype>2</tolerancetype>
+    <correctanswerformat>1</correctanswerformat>
+    <correctanswerlength>4</correctanswerlength>
+    <feedback format="html">
+<text></text>
+    </feedback>
+</answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+</quiz>
